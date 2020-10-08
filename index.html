@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Pangolin|Pompiere&display=swap"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+
+
+</head>
+
+<body onload="loadAllTasks()">
+    <br>
+    <div id="newTaskAdder">
+        <h1 id="newTaskTitle">Add new task</h1>
+        <form id="mainForm">
+                   <label>Task *</label> 
+                   <input type="text" placeholder="Enter new task..." id="taskBox">
+                   <br/>
+                
+                    <label>Task date *</label> 
+                   <input type="date" id="dateBox">
+                   <br/>
+
+              
+                   <label>Task hour</label> 
+                <input type="time" id="timeBox">
+                <br/>
+
+            <div class="buttons">
+                <button onclick="return saveTask()" type="button" id="saveTaskButton">+ Add task</button>
+                <button onclick="clearForm()" type="button" id="clearTaskButton">Clear form</button>
+                <button onclick="clearAllBoard()" type="button" id="clearBoardButton">Clear board</button>
+            </div>
+        </form>
+    </div>
+    <div id="containerDiv">
+    </div>
+
+</body>
+
+</html>

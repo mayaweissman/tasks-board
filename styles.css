@@ -1,0 +1,185 @@
+body{
+    background-image: url("/images/tile.jpg");
+text-align: center;
+padding:10px;
+padding-bottom:60px;
+text-align: left;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+#containerDiv > div{
+width:150px;
+height:250px;
+padding: 20px;
+margin: 10px;
+display: inline-block;
+background-image: url("/images/notebg.png");
+font-family: 'Pangolin', cursive;
+position: relative;
+}
+
+.onLoadAnimation{
+    animation: fadeIn 1s;
+}
+.addNewTaskAnimation:nth-last-of-type(1){
+    animation: fadeIn 1s;
+
+}
+#removeGhyp{
+right: 28px;
+height: 250px;
+width: 135px;
+opacity: 0;
+position: absolute;
+z-index: 3;
+
+}
+
+#removeGhyp:hover{
+    opacity: 1;
+}
+
+#remover{
+    text-align: right;
+    margin-left: 125px;
+    height: 20px;
+    width: 20px;
+}
+
+#taskArea{
+    top: 20px;
+    width: 120px;
+    height: 130px;
+    position: relative;
+    z-index: 2;
+    direction: ltr;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+
+  }
+
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: red;
+
+  }
+#dateArea{
+    width: 120px;
+    height: 10px;
+    z-index: 1;
+    margin-top:5px;
+
+
+}
+
+#timeArea{
+    width: 120px;
+    height: 10px;
+    position: absolute;
+    z-index: 0;
+
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#title{
+text-align: center;
+}
+
+
+#newTaskAdder{
+    background-image: url(/images/formbg.jpg);
+    border-radius: 10px;
+    position: sticky;
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+}
+
+#mainForm{
+    text-align: left;
+}
+td{
+font-size: x-large;
+width: 100px;
+}
+#newTaskForm{
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    text-align: justify;
+    font-size: large;
+
+}
+label{
+    font-size: x-large;
+}
+input{
+    border: 0.5px solid #94b8b8;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+    box-shadow: 1px 1px 10px 1px lightgray;
+}
+#saveTaskButton, #clearTaskButton, #clearBoardButton{
+    height: 30px;
+    width: 100px;
+margin: 3px;
+margin: 10px;
+border-radius: 3px;
+color: white;
+}
+
+#removeButton{
+    background-color: transparent;
+    border: 1px solid transparent;
+   left: 10px;
+}
+
+#saveTaskButton{
+    background-color: #2eb82e    ;
+    border: 0.5px solid transparent;
+}
+
+#clearTaskButton{
+    background-color: #e6b800;
+    border: 0.5px solid transparent;
+}
+#clearBoardButton{
+    background-color: #ff4d4d    ;
+    border: 0.5px solid transparent;
+}
+
+#newTaskAdder button:hover{
+ border-radius: 15px;
+ transition: 1s;
+}
+
